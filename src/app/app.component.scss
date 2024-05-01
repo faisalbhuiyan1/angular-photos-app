@@ -1,0 +1,42 @@
+body, h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .app-navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    &:first-child {
+      padding: 10px;
+      color: #ffffff;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .mt-2 {
+    margin-top: 20px;
+  }

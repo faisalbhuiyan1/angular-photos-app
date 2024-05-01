@@ -1,0 +1,23 @@
+<header>
+  <nav class="app-navbar">
+    <h2 class="app-heading">Photos Angular App</h2>
+  </nav>
+</header>
+<main class="main">
+  <div class="content">
+   <div class="grid-container">
+    @for (photosItem of photosList; track $index) {
+      <div class="grid-item">
+        <div>
+          <img [src]="photosItem.thumbnailUrl" alt="photos image"/>
+        </div>
+        <div class="mt-2">
+          {{ photosItem.title}} 
+        </div> 
+      </div>  
+    }
+  </div>
+ </div>
+</main>
+
+<router-outlet />
